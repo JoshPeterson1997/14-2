@@ -35,3 +35,24 @@ body {
   border: 1px solid blue;
   margin-left: 25px;
 }
+div,
+select {
+  margin: 8px;
+}
+
+input:checked + label {
+  color: red;
+}
+
+input[type='radio']:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+input[type='checkbox']:checked {
+  box-shadow: 0 0 0 3px green;
+}
+
+option:checked {
+  box-shadow: 0 0 0 3px goldenrod;
+  color: red;
+}
