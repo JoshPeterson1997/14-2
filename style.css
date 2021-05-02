@@ -56,3 +56,9 @@ option:checked {
   box-shadow: 0 0 0 3px goldenrod;
   color: red;
 }
+
+.filter-me {
+  filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(2.2);
+}
