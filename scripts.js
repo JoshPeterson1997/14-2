@@ -58,3 +58,9 @@ document
 document
   .querySelector('#search')
   .addEventListener('input', ({ target: { value } }) => {});
+
+const price = 'b';
+
+console.log(price.startsWith('b'));
+
+console.log(price.startsWith('b', 'f', 'i', 'n'));
