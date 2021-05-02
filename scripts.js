@@ -34,10 +34,6 @@ const catalog = [
 
 const ul = document.createElement('ul');
 
-/**
- * Render based on the value of `maxPrice`
- * @param {number} maxPrice
- */
 function render(maxPrice) {
   const filteredCatalog = maxPrice
     ? catalog.filter(({ price }) => price.slice(1) < maxPrice)
@@ -52,7 +48,13 @@ document.body.appendChild(ul);
 render();
 
 document
-  .querySelector('input')
-  .addEventListener('input', ({ target: { value } }) => {
-    render(Number(value));
-  });
+  .querySelector('#max-price')
+  .addEventListener('input', ({ target: { value } }) => {});
+
+document
+  .querySelector('#in-stock-only')
+  .addEventListener('change', ({ target: { checked } }) => {});
+
+document
+  .querySelector('#search')
+  .addEventListener('input', ({ target: { value } }) => {});
