@@ -62,3 +62,11 @@ option:checked {
   filter: grayscale(1);
   filter: saturate(2.2);
 }
+
+.delete {
+  background-color: blue;
+  max-height: 32px;
+  max-width: 16px;
+  min-height: 16px;
+  min-width: 32px;
+}
