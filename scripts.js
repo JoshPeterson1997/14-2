@@ -64,3 +64,24 @@ const price = 'b';
 console.log(price.startsWith('b'));
 
 console.log(price.startsWith('b', 'f', 'i', 'n'));
+
+function removeDummy() {
+  const elem = document.getElementById('delete');
+  elem.parentNode.removeChild(elem);
+  return false;
+}
+
+function pageInit() {
+  const btn = document.getElementByID('btnRemoveDummy');
+  if (btn.addEventListener) {
+    btn.addEventListener('click', removeDummy, false);
+  } else if (btn.attachEvent) {
+    btn.attachEvent('onclick', removeDummy);
+  } else {
+    btn.onclick = removeDummy;
+  }
+}
+
+document.getElementById('suby').addEeventListener('click', e => {
+  document.getElementByID('dummy').remove();
+});
